@@ -1,8 +1,16 @@
+# To run locally:
+# python similar_movies_cosine.py --items=ml-100k/u.item ml-100k/u.data > ../Data/output/similar_movies_out.txt
+
+# To run on a single EMR node:
+# python similar_movies_cosine.py -r emr --items=ml-100k/u.item ml-100k/u.data > ../Data/output/similar_movies_out.txt
+
+# To run on 4 EMR nodes:
+# python similar_movies_cosine.py -r emr --num-ec2-instances=4 --items=ml-100k/u.item ml-100k/u.data ../Data/output/similarity-4-nodes.txt
+
 from mrjob.job import MRJob
 from mrjob.step import MRStep
 from math import sqrt
 from itertools import combinations
-import io
 
 class SimilarMoviesRecommendation(MRJob):
     
