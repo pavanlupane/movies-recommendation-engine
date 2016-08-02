@@ -1,0 +1,257 @@
+PavanLupane (master) src $ python movie_sim_recommendation.py -r emr --num-ec2-instances=4 --items=../ml-100k/u.item ../ml-100k/u.data > ../Data/similarity-4-nodes.txt
+No configs found; falling back on auto-configuration
+Using s3://mrjob-d92a252570b9ba43/tmp/ as our temp dir on S3
+Creating temp directory /var/folders/tn/_v_3jqy13rj95lj6h2jmss5c0000gn/T/movie_sim_recommendation.PavanLupane.20160801.001123.348754
+Copying local files to s3://mrjob-d92a252570b9ba43/tmp/movie_sim_recommendation.PavanLupane.20160801.001123.348754/files/...
+Auto-created instance profile mrjob-dada850de3c48dfc
+Auto-created service role mrjob-c299ab7dcfe730a2
+Created new cluster j-MQPSNPTDFFTR
+Waiting for step 1 of 3 (s-1JIA2YHUTS5ON) to complete...
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING)
+  PENDING (cluster is STARTING: Configuring cluster software)
+  PENDING (cluster is STARTING: Configuring cluster software)
+  PENDING (cluster is STARTING: Configuring cluster software)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  PENDING (cluster is BOOTSTRAPPING: Running bootstrap actions)
+  RUNNING for 7.5s
+  RUNNING for 39.3s
+  RUNNING for 69.6s
+  RUNNING for 100.9s
+  RUNNING for 131.8s
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting 10 minutes for logs to transfer to S3... (ctrl-c to skip)
+
+To fetch logs immediately next time, set up SSH. See:
+https://pythonhosted.org/mrjob/guides/emr-quickstart.html#configuring-ssh-credentials
+
+^CLooking for step log in s3://mrjob-d92a252570b9ba43/tmp/logs/j-MQPSNPTDFFTR/steps/s-1JIA2YHUTS5ON...
+  Parsing step log: s3://mrjob-d92a252570b9ba43/tmp/logs/j-MQPSNPTDFFTR/steps/s-1JIA2YHUTS5ON/syslog.gz
+Counters: 55
+	File Input Format Counters 
+		Bytes Read=1993312
+	File Output Format Counters 
+		Bytes Written=1397908
+	File System Counters
+		FILE: Number of bytes read=670647
+		FILE: Number of bytes written=2535056
+		FILE: Number of large read operations=0
+		FILE: Number of read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=936
+		HDFS: Number of bytes written=1397908
+		HDFS: Number of large read operations=0
+		HDFS: Number of read operations=27
+		HDFS: Number of write operations=10
+		S3: Number of bytes read=1993312
+		S3: Number of bytes written=0
+		S3: Number of large read operations=0
+		S3: Number of read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Data-local map tasks=6
+		Killed reduce tasks=1
+		Launched map tasks=6
+		Launched reduce tasks=6
+		Total megabyte-seconds taken by all map tasks=159598848
+		Total megabyte-seconds taken by all reduce tasks=117403648
+		Total time spent by all map tasks (ms)=207811
+		Total time spent by all maps in occupied slots (ms)=623433
+		Total time spent by all reduce tasks (ms)=114652
+		Total time spent by all reduces in occupied slots (ms)=458608
+		Total vcore-seconds taken by all map tasks=207811
+		Total vcore-seconds taken by all reduce tasks=114652
+	Map-Reduce Framework
+		CPU time spent (ms)=58800
+		Combine input records=0
+		Combine output records=0
+		Failed Shuffles=0
+		GC time elapsed (ms)=7070
+		Input split bytes=936
+		Map input records=100000
+		Map output bytes=1879173
+		Map output materialized bytes=718722
+		Map output records=100000
+		Merged Map outputs=30
+		Physical memory (bytes) snapshot=2965352448
+		Reduce input groups=943
+		Reduce input records=100000
+		Reduce output records=943
+		Reduce shuffle bytes=718722
+		Shuffled Maps =30
+		Spilled Records=200000
+		Total committed heap usage (bytes)=1913610240
+		Virtual memory (bytes) snapshot=14816714752
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+Waiting for step 2 of 3 (s-1QH9GC0UZVVYM) to complete...
+  RUNNING for 239.5s
+  RUNNING for 270.5s
+  RUNNING for 301.0s
+  RUNNING for 332.6s
+  RUNNING for 363.7s
+  RUNNING for 394.3s
+  RUNNING for 424.7s
+  RUNNING for 457.2s
+  RUNNING for 488.3s
+  RUNNING for 519.4s
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting 10 minutes for logs to transfer to S3... (ctrl-c to skip)
+
+To fetch logs immediately next time, set up SSH. See:
+https://pythonhosted.org/mrjob/guides/emr-quickstart.html#configuring-ssh-credentials
+
+^CLooking for step log in s3://mrjob-d92a252570b9ba43/tmp/logs/j-MQPSNPTDFFTR/steps/s-1QH9GC0UZVVYM...
+  Parsing step log: s3://mrjob-d92a252570b9ba43/tmp/logs/j-MQPSNPTDFFTR/steps/s-1QH9GC0UZVVYM/syslog.gz
+Counters: 50
+	File Input Format Counters 
+		Bytes Read=1514548
+	File Output Format Counters 
+		Bytes Written=6156882
+	File System Counters
+		FILE: Number of bytes read=118466162
+		FILE: Number of bytes written=238143288
+		FILE: Number of large read operations=0
+		FILE: Number of read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1516123
+		HDFS: Number of bytes written=6156882
+		HDFS: Number of large read operations=0
+		HDFS: Number of read operations=42
+		HDFS: Number of write operations=10
+	Job Counters 
+		Data-local map tasks=8
+		Launched map tasks=9
+		Launched reduce tasks=5
+		Rack-local map tasks=1
+		Total megabyte-seconds taken by all map tasks=989051136
+		Total megabyte-seconds taken by all reduce tasks=771394560
+		Total time spent by all map tasks (ms)=1287827
+		Total time spent by all maps in occupied slots (ms)=3863481
+		Total time spent by all reduce tasks (ms)=753315
+		Total time spent by all reduces in occupied slots (ms)=3013260
+		Total vcore-seconds taken by all map tasks=1287827
+		Total vcore-seconds taken by all reduce tasks=753315
+	Map-Reduce Framework
+		CPU time spent (ms)=922800
+		Combine input records=0
+		Combine output records=0
+		Failed Shuffles=0
+		GC time elapsed (ms)=6521
+		Input split bytes=1575
+		Map input records=943
+		Map output bytes=519951392
+		Map output materialized bytes=118368559
+		Map output records=20100812
+		Merged Map outputs=45
+		Physical memory (bytes) snapshot=4671160320
+		Reduce input groups=1966412
+		Reduce input records=20100812
+		Reduce output records=154800
+		Reduce shuffle bytes=118368559
+		Shuffled Maps =45
+		Spilled Records=44474520
+		Total committed heap usage (bytes)=3441922048
+		Virtual memory (bytes) snapshot=18433990656
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+Waiting for step 3 of 3 (s-2YJQYUZTZW7Y2) to complete...
+  RUNNING for 148.2s
+  RUNNING for 179.9s
+  COMPLETED
+Attempting to fetch counters from logs...
+Waiting for cluster (j-MQPSNPTDFFTR) to terminate...
+  TERMINATING: Steps completed
+  TERMINATING: Steps completed
+  TERMINATING: Steps completed
+  TERMINATING: Steps completed
+  TERMINATING: Steps completed
+  TERMINATED: Steps completed
+Looking for step log in s3://mrjob-d92a252570b9ba43/tmp/logs/j-MQPSNPTDFFTR/steps/s-2YJQYUZTZW7Y2...
+  Parsing step log: s3://mrjob-d92a252570b9ba43/tmp/logs/j-MQPSNPTDFFTR/steps/s-2YJQYUZTZW7Y2/syslog.gz
+Counters: 56
+	File Input Format Counters 
+		Bytes Read=6269027
+	File Output Format Counters 
+		Bytes Written=12076174
+	File System Counters
+		FILE: Number of bytes read=6062723
+		FILE: Number of bytes written=14035660
+		FILE: Number of large read operations=0
+		FILE: Number of read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=6270777
+		HDFS: Number of bytes written=0
+		HDFS: Number of large read operations=0
+		HDFS: Number of read operations=20
+		HDFS: Number of write operations=0
+		S3: Number of bytes read=0
+		S3: Number of bytes written=12076174
+		S3: Number of large read operations=0
+		S3: Number of read operations=0
+		S3: Number of write operations=0
+	Job Counters 
+		Data-local map tasks=9
+		Killed reduce tasks=1
+		Launched map tasks=10
+		Launched reduce tasks=6
+		Rack-local map tasks=1
+		Total megabyte-seconds taken by all map tasks=246971136
+		Total megabyte-seconds taken by all reduce tasks=206919680
+		Total time spent by all map tasks (ms)=321577
+		Total time spent by all maps in occupied slots (ms)=964731
+		Total time spent by all reduce tasks (ms)=202070
+		Total time spent by all reduces in occupied slots (ms)=808280
+		Total vcore-seconds taken by all map tasks=321577
+		Total vcore-seconds taken by all reduce tasks=202070
+	Map-Reduce Framework
+		CPU time spent (ms)=49940
+		Combine input records=0
+		Combine output records=0
+		Failed Shuffles=0
+		GC time elapsed (ms)=10076
+		Input split bytes=1750
+		Map input records=154800
+		Map output bytes=12385774
+		Map output materialized bytes=6410737
+		Map output records=154800
+		Merged Map outputs=50
+		Physical memory (bytes) snapshot=4558786560
+		Reduce input groups=154700
+		Reduce input records=154800
+		Reduce output records=154800
+		Reduce shuffle bytes=6410737
+		Shuffled Maps =50
+		Spilled Records=309600
+		Total committed heap usage (bytes)=2990776320
+		Virtual memory (bytes) snapshot=19705528320
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+Streaming final output from s3://mrjob-d92a252570b9ba43/tmp/movie_sim_recommendation.PavanLupane.20160801.001123.348754/output/...
+Removing s3 temp directory s3://mrjob-d92a252570b9ba43/tmp/movie_sim_recommendation.PavanLupane.20160801.001123.348754/...
+Removing temp directory /var/folders/tn/_v_3jqy13rj95lj6h2jmss5c0000gn/T/movie_sim_recommendation.PavanLupane.20160801.001123.348754...
+Removing log files in s3://mrjob-d92a252570b9ba43/tmp/logs/j-MQPSNPTDFFTR/...
+Terminating cluster: j-MQPSNPTDFFTR
+PavanLupane (master) src $ 
